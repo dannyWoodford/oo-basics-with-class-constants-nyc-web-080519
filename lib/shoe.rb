@@ -10,7 +10,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
      BRANDS << brand
-    
+    BRANDS.uniq
   end
   
   def brand=(brand)
@@ -18,11 +18,11 @@ class Shoe
   end 
   
   BRANDS = []
-  burner_brands = []
+ 
   
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-binding.pry
+#binding.pry
 end #class Shoe end
