@@ -8,8 +8,9 @@ class Shoe
   
   
   def initialize(brand)
-    @brand = brand.uniq
-     BRANDS << brand
+    @brand = brand
+     burner_brands << brand
+     burner_brands.uniq
   end
   
   def brand=(brand)
@@ -17,6 +18,7 @@ class Shoe
   end 
   
   BRANDS = []
+  burner_brands = []
   
   def cobble
     self.condition = "new"
