@@ -10,7 +10,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
      burner_brands << brand
-     burner_brands.uniq
+     burner_brands.uniq 
   end
   
   def brand=(brand)
@@ -24,5 +24,5 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-
+binding.pry
 end #class Shoe end
