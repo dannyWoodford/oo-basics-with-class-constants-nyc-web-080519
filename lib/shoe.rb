@@ -9,8 +9,8 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-     burner_brands << brand
-     burner_brands.uniq 
+     BRANDS << brand
+    
   end
   
   def brand=(brand)
